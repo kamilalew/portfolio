@@ -168,16 +168,13 @@ header {
 }
 
 .technologies_box {
-  flex: 1;
-  transition: background-color ease 5s;
-}
-
-.technologies_box {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ededed;
   border-radius: 25px;
+  flex: 1;
+  transition: background-color ease 5s;
 }
 
 .technologies_known {
@@ -193,14 +190,14 @@ header {
 }
 
 .projects {
-  background-color: #fafafa;
+  background-color:#fafafa;
   height: 500px;
   border-top: 0.5px dotted grey;
+  transition: background-color ease-in 2s;
 }
-x
+
 .projects:hover {
   background-color: #ededed;
-  transition: background-color ease-in 2s;
 }
 .reactIcon, .html5Icon {
   width: 100px;
