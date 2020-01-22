@@ -1,3 +1,109 @@
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main_container {
+  background-color: #f8f8f8
+}
+
+@media only screen and (min-width: 600px) {
+  .main_container {
+    margin: 0 30px 0 30px;
+  }
+}
+
+header {
+  text-align: left;
+  padding: 30px;
+  position: absolute;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    position: relative;
+  }
+}
+
+.introduction_container {
+  display: flex;
+  height: 500px;
+}
+
+.welcome {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  font-weight: 800;
+  font-size: 60px;
+  opacity: 0.9;
+  transition: opacity ease-in 2s;
+}
+
+.introduction_container:hover .welcome {
+  opacity: 0;
+  transition: opacity ease-in 0.7s;
+}
+
+.introduction_container:hover {
+  opacity: 0.6;
+  transition: opacity ease-in 0.7s;
+}
+
+.left_intro_container {
+  height: 300px;
+  background-image: url('./images/background.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  flex: 1;
+  transition: flex linear 2s;
+  padding-top: 10%;
+}
+
+.left_intro_text_1, .left_intro_text_2, .left_intro_text_3 {
+  opacity: 0;
+  padding: 10px;
+  /* transition: opacity ease 2s; */
+}
+
+.left_intro_container:hover {
+  flex:2;
+}
+
+.left_intro_container:hover .left_intro_text_1, .left_intro_container:hover .left_intro_text_2, .left_intro_container:hover .left_intro_text_3 {
+  opacity: 1;
+  color: black;
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+
+.right_intro_container {
+  flex: 1;
+}
+
+.about_me_container {
+  display: flex;
+  height: 700px;
+  background-color:#fafafa;
+  transition: background-color ease-in 2s;
+}
+
+.about_me_container:hover {
+  display: flex;
+  height: 700px;
+  background-color: #ededed;
+}
+
+.about_me_description, .about_me_photo {
+  flex: 1;
+}
+
+.about_me_photo {
+  background-image: url(./images/new_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 30px;
 }
