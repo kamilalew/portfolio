@@ -63,10 +63,11 @@ header {
 
 .left_intro_container {
   height: 200px;
-  background-color: cornflowerblue;
+  background-color: grey;
   flex: 1;
   transition: flex linear 2s, background-color ease-in 2s;
   padding-top: 10%;
+  border-radius: 25px;
 }
 
 .left_intro_text_1, .left_intro_text_2, .left_intro_text_3 {
@@ -149,4 +150,65 @@ header {
 .about_me_description {
   flex: 1;
   opacity: 1;
+}
+
+.technologies_container {
+  height: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+}
+
+.technologies_container:hover .technologies_box{
+  background-color: #cccccc;
+}
+
+.technologies_known, .technologies_box {
+  flex: 1;
+}
+
+.technologies_box {
+  flex: 1;
+  transition: background-color ease 5s;
+}
+
+.technologies_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ededed;
+  border-radius: 25px;
+}
+
+.technologies_known {
+  height: 500px;
+  font-size: 30px;
+  color: #ededed;
+  padding-top: 10%;
+  transition: color ease 3s;
+}
+
+.technologies_known:hover {
+  color: black;
+}
+
+.projects {
+  background-color: #fafafa;
+  height: 500px;
+  border-top: 0.5px dotted grey;
+}
+x
+.projects:hover {
+  background-color: #ededed;
+  transition: background-color ease-in 2s;
+}
+.reactIcon, .html5Icon {
+  width: 100px;
+  height: 100px;
+  transition: width ease 2s, height ease 2s;
+}
+
+.technologies_container:hover .reactIcon {
+  width: 150px;
+  height: 150px;
 }
