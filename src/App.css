@@ -48,7 +48,7 @@ header {
 @media only screen and (min-width: 600px) {
   .introduction_container {
     display: flex;
-    height: 500px;
+    height: 400px;
   }
 }
 
@@ -59,6 +59,7 @@ header {
 
 .introduction_container:hover .left_intro_container{
   background-color: crimson;
+  flex:2;
 }
 
 .left_intro_container {
@@ -73,10 +74,6 @@ header {
 .left_intro_text_1, .left_intro_text_2, .left_intro_text_3 {
   opacity: 0;
   padding: 10px;
-}
-
-.left_intro_container:hover {
-  flex:2;
 }
 
 .introduction_container:hover .left_intro_text_1, .introduction_container:hover .left_intro_text_2, .introduction_container:hover .left_intro_text_3 {
