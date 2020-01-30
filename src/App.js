@@ -8,8 +8,15 @@ import jsIcon from './images/js.png';
 function App() {
   return (
     <div className="App">
-      <div className='main_container'>
+      <div className='main_header'>
         <header>Kamila Lewicka - Junior Front End Developer</header>
+        <ul className='header_information'>
+          <li>Github</li>
+          <li>Linkedin</li>
+          <li>One More</li>
+        </ul>
+      </div >
+      <div className='main_container'>
         <div className='introduction_container'>
           <div className='welcome'>Welcome</div>
           <div className='left_intro_container'>
@@ -31,23 +38,23 @@ function App() {
           <div className='technologies_box'>
             <div className='forFlex'>
               <img className='reactIcon' src={reactIcon} alt='react icon' />
-              </div>
-              <div className='forFlex'>
+            </div>
+            <div className='forFlex'>
               <img className='reactIcon' src={cssIcon} alt='react icon' />
-              </div>
-              <div className='forFlex'>
+            </div>
+            <div className='forFlex'>
               <img className='reactIcon' src={html5Icon} alt='react icon' />
-              </div>
-              <div className='forFlex'>
-              <img className='reactIcon' src={jsIcon} alt='react icon' /> 
-              </div> 
-        </div>
-        <div className='technologies_known'>These are the technologies that I've learnt through completing various courses. 
+            </div>
+            <div className='forFlex'>
+              <img className='reactIcon' src={jsIcon} alt='react icon' />
+            </div>
+          </div>
+          <div className='technologies_known'>These are the technologies that I've learnt through completing various courses.
         I've used self-teaching sources like freecodecamp, W3schools and in-house training via Kodiri bootcamp</div>
         </div>
         <div className='projects'>My projects</div>
       </div>
-    </div>
+    </div >
   );
 }
 
