@@ -6,18 +6,14 @@ import html5Icon from './images/html5.svg';
 import jsIcon from './images/js.png';
 import Header from './Header/Header.js';
 import Welcome from './Welcome/Welcome.js';
+import AboutMe from './AboutMe/AboutMe.js';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Welcome />
-        <div className='about_me_container'>
-          <div className='about_me_description'>Junior Front End Web developer looking for my first role.
-          For many years I've managed multiple international research projects. Now it's time to code !
-          </div>
-          <div className='about_me_photo'></div>
-        </div>
+      <AboutMe />
         <div className='technologies_container'>
           <div className='technologies_box'>
             <div className='forFlex'>

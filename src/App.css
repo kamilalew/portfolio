@@ -7,7 +7,7 @@
   background-color: #f8f8f8;
 }
 
-.about_me_container {
+.AboutMe_container {
   display: flex;
   height: 700px;
   padding-bottom: 150px;
@@ -16,7 +16,7 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .about_me_container {
+  .AboutMe_container {
     display: flex;
     height: 700px;
     background-color: #fafafa;
@@ -24,15 +24,15 @@
   }
 }
 
-.about_me_container:hover {
+.AboutMe_container:hover {
   background-color: #ededed;
 }
 
-.about_me_container:hover .about_me_photo {
+.AboutMe_container:hover .about_me_photo {
   flex: 1;
 }
 
-.about_me_container:hover .about_me_description {
+.AboutMe_container:hover .about_me_description {
   flex: 1;
   visibility: visible;
   opacity: 1;

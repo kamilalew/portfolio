@@ -48,12 +48,12 @@
 
 @media only screen and (min-width: 600px) {
     .Welcome-message {
-        top: 20%;
+        top: 25%;
         left: 40%;
     }
     .Welcome-wrapper {
         display: flex;
-        height: 400px;
+        height: 350px;
     }
     .Welcome-details-wrapper {
         flex: 1;
