@@ -9,7 +9,12 @@
   }
 
   .Header-name {
-    padding: 30px;
+    padding: 60px;
+  }
+
+  .Technology_logo {
+    height: 50px;
+    width: 50px;
   }
 
   @media only screen and (min-width: 600px) {
