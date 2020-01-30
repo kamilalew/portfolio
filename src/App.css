@@ -1,40 +1,10 @@
 .App {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-}
-
-.main_header {
-  color: black;
-  background-color: red;
-  display: flex;
-  justify-content: space-around;
-}
-
-.main_header ul{
-  display: flex;
-}
-
-.main_container {
   background-color: #f8f8f8;
-  height: 1000px;
 }
 
-@media only screen and (min-width: 600px) {
-  .main_container {
-    margin: 0 30px 0 30px;
-  }
-}
-
-header {
-  text-align: left;
-  padding: 30px;
-  /* position: fixed; */
-  right: 0;
-  left: 0;
-  z-index: 999;
-}
-
-.welcome {
+.welcome-message {
   position: absolute;
   top: 25%;
   left: 20%;
@@ -45,35 +15,30 @@ header {
 }
 
 @media only screen and (min-width: 600px) {
-  header {
-    left: 40%;
-    /* position: fixed; */
-    background-color: green;
-  }
-  .welcome {
+  .welcome-message {
     top: 25%;
     left: 40%;
   }
 }
 
-.introduction_container {
+.Welcome-wrapper {
   height: 400px;
 }
 
 @media only screen and (min-width: 600px) {
-  .introduction_container {
+  .Welcome-wrapper {
     display: flex;
     height: 500px;
   }
 }
 
-.introduction_container:hover .welcome {
+.Welcome-wrapper:hover .welcome {
   opacity: 0;
   transition: opacity ease-in 1s;
 }
 
-.introduction_container:hover .left_intro_container {
-  background-color: crimson;
+.Welcome-wrapper:hover .left_intro_container {
+  background-color: #e30b5d;
   flex: 2;
 }
 
@@ -81,7 +46,7 @@ header {
   height: 200px;
   background-color: grey;
   flex: 1;
-  transition: flex linear 2s, background-color ease-in 2s;
+  transition: flex linear 1s, background-color ease-in 1s;
   padding-top: 10%;
   border-radius: 25px;
 }
@@ -91,7 +56,7 @@ header {
   padding: 10px;
 }
 
-.introduction_container:hover .left_intro_text_1, .introduction_container:hover .left_intro_text_2, .introduction_container:hover .left_intro_text_3 {
+.Welcome-wrapper:hover .left_intro_text_1, .Welcome-wrapper:hover .left_intro_text_2, .Welcome-wrapper:hover .left_intro_text_3 {
   opacity: 1;
   color: white;
   font-size: 20px;

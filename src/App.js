@@ -4,30 +4,14 @@ import reactIcon from './images/react.svg';
 import cssIcon from './images/css.svg';
 import html5Icon from './images/html5.svg';
 import jsIcon from './images/js.png';
+import Header from './Header/Header.js';
+import Welcome from './Welcome/Welcome.js';
 
 function App() {
   return (
     <div className="App">
-      <div className='main_header'>
-        <header>Kamila Lewicka - Junior Front End Developer</header>
-        <ul className='header_information'>
-          <li>Github</li>
-          <li>Linkedin</li>
-          <li>One More</li>
-        </ul>
-      </div >
-      <div className='main_container'>
-        <div className='introduction_container'>
-          <div className='welcome'>Welcome</div>
-          <div className='left_intro_container'>
-            <div className='left_intro_container_text'>
-              <div className='left_intro_text_1'>Hello</div>
-              <div className='left_intro_text_2'>My name is Kamila</div>
-              <div className='left_intro_text_3'>I'm a Front End Web Developer</div>
-            </div>
-          </div>
-          <div className='right_intro_container'></div>
-        </div>
+      <Header />
+      <Welcome />
         <div className='about_me_container'>
           <div className='about_me_description'>Junior Front End Web developer looking for my first role.
           For many years I've managed multiple international research projects. Now it's time to code !
@@ -54,7 +38,6 @@ function App() {
         </div>
         <div className='projects'>My projects</div>
       </div>
-    </div >
   );
 }
 

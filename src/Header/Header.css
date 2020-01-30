@@ -1,0 +1,24 @@
+   .Header-wrapper ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Header-wrapper ul li{
+    padding: 20px;
+    list-style-type: none;
+  }
+
+  .Header-name {
+    padding: 30px;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .Header-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    .Header-name {
+      left: 40%;
+    }
+  }
+  
