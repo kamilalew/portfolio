@@ -10,9 +10,8 @@ export default function Header() {
                 <div className='Header-name'>Kamila Lewicka - Junior Front End Developer
                 </div>
                 <ul className='header_information'>
-                    <li><img className='Technology_logo' src={github_logo} alt='Github logo'/></li>
-                    <li><img className='Technology_logo' src={linkedin_logo} alt='LinkedIn logo'/></li>
-                    <li><img className='Technology_logo' src={gmail_logo} alt='Gmail logo'/></li>
+                    <li><a href='https://github.com/kamilalew' target='_blank' rel="noopener noreferrer"><img className='Technology_logo' src={github_logo} alt='Github logo'/></a></li>
+                    <li><a href='https://www.linkedin.com/in/kamila-m-lewicka/' target='_blank' rel="noopener noreferrer"><img className='Technology_logo' src={linkedin_logo} alt='LinkedIn logo'/></a></li>
                 </ul>
             </div >
         )

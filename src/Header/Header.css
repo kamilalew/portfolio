@@ -15,7 +15,17 @@
   .Technology_logo {
     height: 50px;
     width: 50px;
+    transition: height ease 1s, width ease 1s;
   }
+
+  /* ON HOVER CHANGES */
+  .Technology_logo:hover {
+    height: 60px;
+    width: 60px;
+  }
+
+
+  /* MEDIA QUERIES */
 
   @media only screen and (min-width: 600px) {
     .Header-wrapper {
