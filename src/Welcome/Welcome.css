@@ -1,0 +1,71 @@
+.Welcome-message {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-weight: 800;
+    font-size: 60px;
+    opacity: 0.9;
+    transition: opacity ease-in 1s;
+}
+
+.Welcome-wrapper {
+    height: 300px;
+}
+
+.Welcome-details-wrapper {
+    height: 200px;
+    background-color: grey;
+    transition: flex ease-out 2s, background-color ease-in 2s, opacity ease-in 1s;
+    border-radius: 25px;
+}
+
+.Welcome-myDetails-details {
+    color: #f8f8f8;
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    opacity: 0;
+    transition: opacity ease-in 1s;
+}
+
+/* ON HOVER CHANGES */
+
+.Welcome-wrapper:hover .Welcome-message {
+    opacity: 0;
+}
+
+.Welcome-wrapper:hover .Welcome-details-wrapper {
+    background-color: #e30b5d;
+    flex: 2;
+}
+
+.Welcome-wrapper:hover .Welcome-myDetails-details {
+    opacity: 1;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) {
+    .Welcome-message {
+        top: 20%;
+        left: 40%;
+    }
+    .Welcome-wrapper {
+        display: flex;
+        height: 400px;
+    }
+    .Welcome-details-wrapper {
+        flex: 1;
+    }
+    .Welcome-myDetails-details {
+        padding-top: 25px;
+        opacity: 0;
+        transition: flex ease-out 2s, background-color ease-in 0.3s;
+    }
+    .Welcome-details-wrapper-dummy {
+        padding-top: 10%;
+        height: 200px;
+        flex: 1;
+      }
+}
