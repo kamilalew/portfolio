@@ -1,96 +1,200 @@
-.App {
+.container {
   text-align: center;
   /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Thasadith', sans-serif; */
   font-family: 'Bubbler One', sans-serif;
   /* font-family: 'Lacquer', sans-serif; */
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+  background-color: #1a1a1a;
+  height: 1000 vh;
 }
-
-
-
-
-/* .AboutMe_container:hover {
-  background-color: #ededed;
-}
-
-.AboutMe_container:hover .about_me_photo {
-  margin-right: -300px;
+/* 
+.container{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  grid-template-areas: 
+  'a a b b b b b b c c c c'
+  'a a b b b b b b c c c c'
+  'a a d d d d e e e e c c'
+  'a a d d d d e e e e c c'
+  'f f f f g g g g c c c c'
+  'f f f f g g g g c c c c'
+  'h h i i i i i i j j j j'
+  'h h i i i i i i j j j j'
+  'h h i i i i i i j j j j'
+  'h h i i i i i i j j j j'
+  'h h i i i i i i j j j j'
+  'h h i i i i i i j j j j';
 } */
 
-/* .AboutMe_container:hover .about_me_description {
-  flex: 1;
-  visibility: visible;
-  opacity: 1;
-  color: black;
-} */
 
 
-
-/* .about_me_photo:hover {
-  flex: 1;
-} */
-
-.about_me_description {
-  flex: 1;
-  opacity: 1;
+.container{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  /* grid-gap: 5px; */
+  grid-template-areas: 
+  'a a z z z .'
+  'b b c c . .'
+  'o d d e e .'
+  'f g h i j .'
+  'k l m n . .'
+  'p q r s s s'
+  't u v x y y'
+  /* 'a a d d d d e e e e c c'
+  'f f f f g g g g c c c c'
+  'f f f f g g g g c c c c'
+  'h h i i i i i i j j j j'
+  'h h i i i i i i j j j j'
+  'h h i i i i i i j j j j'
+  'h h i i i i i i j j j j'
+  'h h i i i i i i j j j j'
+  'h h i i i i i i j j j j'; */
 }
 
-.technologies_container {
-  height: 500px;
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 50px;
+.box {
+  border: 0.1em solid #333333;
+  color: white;
+  height: 150px;
+  width: 100%;
+  text-align: center;
 }
 
-.technologies_container:hover .technologies_box {
-  background-color: #cccccc;
-}
-
-.technologies_known, .technologies_box {
-  flex: 1;
-}
-
-.technologies_box {
+.a {
+  grid-area: a;
+  border-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ededed;
-  border-radius: 25px;
-  flex: 1;
-  transition: background-color ease 5s;
 }
 
-.technologies_known {
-  height: 500px;
-  font-size: 30px;
-  color: #ededed;
-  padding-top: 10%;
-  transition: color ease 3s;
+span {
+  font-size: 60px;
 }
 
-.technologies_known:hover {
-  color: black;
+.aboutMe {
+  grid-area: z;
+  padding: 10px;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
 }
 
-.projects {
-  background-color: #fafafa;
-  height: 500px;
-  border-top: 0.5px dotted grey;
-  transition: background-color ease-in 2s;
+.z {
+  grid-area: z;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.projects:hover {
-  background-color: #ededed;
+.b {
+  grid-area: b;
 }
 
-.reactIcon, .html5Icon {
-  width: 100px;
-  height: 100px;
-  transition: width ease 2s, height ease 2s;
+.c {
+  grid-area: c;
+  border-left: 0;
 }
 
-.technologies_container:hover .reactIcon {
-  width: 150px;
-  height: 150px;
+.d {
+  grid-area: d;
+  border: 0;
 }
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}
+
+.h {
+  grid-area: h;
+}
+
+.i {
+  grid-area: i;
+}
+
+.j {
+  grid-area: j;
+}
+
+.k {
+  grid-area: l;
+}
+
+.l {
+  grid-area: l;
+}
+
+.m {
+  grid-area: m;
+}
+
+.n {
+  grid-area: n;
+}
+
+.o {
+  grid-area: o;
+  border-top: 0;
+}
+
+.p {
+  grid-area: p;
+}
+
+.q {
+  grid-area: q;
+}
+
+.r {
+  grid-area: r;
+}
+
+.s {
+  grid-area: s;
+}
+
+.t {
+  grid-area: t;
+}
+
+.u {
+  grid-area: u;
+}
+
+.v {
+  grid-area: v;
+}
+
+.w {
+  grid-area: w;
+}
+
+.x {
+  grid-area: x;
+}
+
+.y {
+  grid-area: y;
+}
+
