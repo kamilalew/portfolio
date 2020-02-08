@@ -3,16 +3,6 @@
   text-align: center;
   font-family: "Bubbler One", sans-serif;
   background-color: #1a1a1a;
-  grid-template-areas:
-    "a a a a"
-    "z z z z"
-    ". . . ."
-    "j j j j"
-    "b b b b"
-    "o o o o"
-    "c c c c"
-    "d d d d"
-    "e e e e";
 
   .box {
     color: white;
@@ -95,7 +85,9 @@
 
 .j {
   grid-area: j;
-  font-size: 20px;
+  color: orange !important;
+  font-weight: bold;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,6 +96,7 @@
   border-radius: 5px;
 
   @media (min-width: 600px) {
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 20px;
     -webkit-transform: rotate(45deg);
@@ -173,8 +166,12 @@
 .o {
   grid-area: o;
   .aboutMe_description {
-    padding: 0px 20px;
+    padding: 40px 20px 0 20px;
     font-size: 20px;
+
+    @media (min-width: 600px) {
+      padding: 0px 20px;
+    }
   }
 }
 
@@ -190,7 +187,7 @@
   .myLinks_wrap {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 30px;
 
     .myLinks {
       height: 50px;
@@ -224,20 +221,26 @@
 
 .c {
   grid-area: c;
-  font-size: 20px;
-  margin-top: 30px;
-  margin-left: 20px;
+  color: orange !important;
+  font-weight: bold;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(-16deg);
   transition: text-shadow 1s;
   border: 1px solid #333333;
   border-radius: 5px;
+
+  @media (min-width: 600px) {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(-16deg);
+  }
 }
 
 .c:hover {
@@ -285,24 +288,32 @@
 
 .h {
   grid-area: h;
-  font-size: 30px;
+  font-weight: bold;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  margin-top: 30px;
-  margin-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(-16deg);
   transition: text-shadow 1s;
   border: 1px solid #333333;
   border-radius: 5px;
+
+  .projects {
+    color: orange;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(-16deg);
+  }
 }
 .h:hover {
   text-shadow: 20px 20px grey;
@@ -327,7 +338,7 @@
 .k {
   grid-area: k;
   position: relative;
-  border: 1px solid #333333;
+  border-bottom: 1px solid orang;
   border-radius: 5px;
   .londonSites_image {
     background-image: url(./images/londonSites.png);
@@ -350,13 +361,17 @@
   .LondonSites_description {
     position: absolute;
     padding: 20px;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     opacity: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 1s;
+
+    @media (min-width: 600px) {
+      font-size: 40px;
+    }
   }
 }
 
@@ -377,7 +392,6 @@
     height: 150px;
     width: 100%;
     background-size: cover;
-    // background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -389,13 +403,17 @@
   .kodflix_description {
     position: absolute;
     padding: 20px;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     opacity: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 1s;
+
+    @media (min-width: 600px) {
+      font-size: 40px;
+    }
   }
 }
 
@@ -416,7 +434,6 @@
     height: 150px;
     width: 100%;
     background-size: cover;
-    // background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -428,13 +445,17 @@
   .catAdoption_description {
     position: absolute;
     padding: 20px;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     opacity: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 1s;
+
+    @media (min-width: 600px) {
+      font-size: 40px;
+    }
   }
 }
 
@@ -454,13 +475,17 @@
   .wePair_description {
     position: absolute;
     padding: 20px;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     opacity: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 1s;
+
+    @media (min-width: 600px) {
+      font-size: 40px;
+    }
   }
   .comingSoon {
     color: red;
