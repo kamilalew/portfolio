@@ -15,14 +15,19 @@
     grid-template-rows: auto;
     grid-template-areas:
       "a a z z z x"
+      "zz zz zz zz zz zz"
       "j i i i i i"
       ". b b o o o"
+      "yy yy yy yy yy yy"
       "c . . . . ."
       ". d e f g p"
+      "xx xx xx xx xx xx"
       "h . . . . ."
       ". k l m n ."
-      ". q r s s s"
-      "t u . . . .";
+      "ww ww ww ww ww ww"
+      "t . . . . ."
+      ". q . s . ."
+      ". . r . u .";
   }
 }
 
@@ -198,9 +203,9 @@
         justify-content: space-around;
         transition: transform 1s;
       }
-      }
-      .myLinks1 {
-          padding-right: 40px;
+    }
+    .myLinks1 {
+      padding-right: 40px;
     }
 
     .myLinks:hover {
@@ -338,8 +343,13 @@
 .k {
   grid-area: k;
   position: relative;
-  border-bottom: 1px solid orang;
+  border-bottom: 1px solid orange;
   border-radius: 5px;
+  @media (min-width: 600px) {
+    border-right: 1px solid orange;
+    border-bottom: none;
+    border-radius: 0;
+  }
   .londonSites_image {
     background-image: url(./images/londonSites.png);
     height: 150px;
@@ -385,8 +395,13 @@
 .l {
   grid-area: l;
   position: relative;
-  border: 1px solid #333333;
+  border-bottom: 1px solid orange;
   border-radius: 5px;
+  @media (min-width: 600px) {
+    border-right: 1px solid orange;
+    border-bottom: none;
+    border-radius: 0;
+  }
   .kodflix_image {
     background-image: url(./images/kodflix.png);
     height: 150px;
@@ -427,8 +442,13 @@
 .m {
   grid-area: m;
   position: relative;
-  border: 1px solid #333333;
+  border-bottom: 1px solid orange;
   border-radius: 5px;
+  @media (min-width: 600px) {
+    border-right: 1px solid orange;
+    border-bottom: none;
+    border-radius: 0;
+  }
   .catAdoption_image {
     background-image: url(./images/catAdoption.png);
     height: 150px;
@@ -469,9 +489,11 @@
 .n {
   grid-area: n;
   position: relative;
-  border: 1px solid #333333;
+  border-bottom: 1px solid orange;
   border-radius: 5px;
-
+  @media (min-width: 600px) {
+    border-bottom: none;
+  }
   .wePair_description {
     position: absolute;
     padding: 20px;
@@ -493,24 +515,127 @@
   }
 }
 
+.t {
+  grid-area: t;
+  font-weight: bold;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: text-shadow 1s;
+  border: 1px solid #333333;
+  border-radius: 5px;
+
+  .hobbies {
+    color: orange;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(-16deg);
+  }
+}
+
 .q {
   grid-area: q;
+  .sailing_image {
+    background-image: url(./images/sailing.jpeg);
+    height: 150px;
+    width: 100%;
+    background-size: contain;
+    // background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: opacity 1s;
+
+    @media (min-width: 600px) {
+      background-size: cover;
+    }
+  }
+}
+
+//below are dummies for hobbies
+.s {
+  grid-area: s;
+  .sailing_image {
+    background-image: url(./images/sailing.jpg);
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    // background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: opacity 1s;
+
+    @media (min-width: 600px) {
+      background-size: cover;
+    }
+  }
 }
 
 .r {
   grid-area: r;
-}
+  .sailing_image {
+    background-image: url(./images/sailing.jpg);
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    // background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: opacity 1s;
 
-.s {
-  grid-area: s;
-}
-
-.t {
-  grid-area: t;
+    @media (min-width: 600px) {
+      background-size: cover;
+    }
+  }
 }
 
 .u {
   grid-area: u;
+  .sailing_image {
+    background-image: url(./images/sailing.jpg);
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    // background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: opacity 1s;
+
+    @media (min-width: 600px) {
+      background-size: cover;
+    }
+  }
+}
+
+.xx {
+  grid-area: xx;
+}
+
+.yy {
+  grid-area: yy;
+}
+
+.zz {
+  grid-area: zz;
+}
+
+.ww {
+  grid-area: ww;
 }
 
 .v {

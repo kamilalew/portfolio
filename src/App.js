@@ -17,7 +17,7 @@ function App() {
         </h3>
       </div>
       <div className="box z">
-        <div className="aboutMe">Junior Front End Web Developer <br /><br /> London based</div>
+        <div className="aboutMe">Full-Stack Web Developer <br /><br /> London based</div>
       </div>
       <div className="box x">
         <div className="myLinks_wrap">
@@ -31,7 +31,10 @@ function App() {
         <div className='myPhoto'></div>
       </div>
       <div className="box o">
-        <div className="aboutMe_description">Lorem ipsum dolor sit amet, consectetur adipiscvitae tempor tempus, dapibus nec nisi. Integer pellentesque ultricies ante. Ut tellus turpis, pretium nec tempus s eu interdum. Suspendisse sed maximus nunc. Praesent vitae sapien ante. Phasellus at ex augue. Integer malesuada odio aliquam lectus mollis eleifend. Suspendisse potenti. Curabitur molestie lorem vel aliquam viverra. Nullam sagittis rhoncus dolor, vitae volutpat diam rhoncus non.</div>
+        <div className="aboutMe_description">Hello, my name is Kamila and I'm a full-stack developer. <br />
+          I have built a successful career as quantitative researcher but always wanted to create apps. <br />
+          I am passionate about CSS and the wide amount of features it offers. <br />
+        </div>
       </div>
       <div className="box v"></div>
       <div className="box c">Technologies I use</div>
@@ -59,15 +62,34 @@ function App() {
         <div className="catAdoption_description">Cat <br />Adoption</div>
       </a></div>
       <div className="box n"><a href=""
-      alt="WePair" target="_blank" rel="noopener noreferrer">
-      <div className="wePair_description">WePair <br/> <span className="comingSoon">Coming soon</span></div>
-    </a></div>
-      <div className="box o">10</div>
-      <div className="box q">10</div>
-      <div className="box r">10</div>
-      <div className="box s">10</div>
-      <div className="box t">10</div>
-      <div className="box u">10</div>
+        alt="WePair" target="_blank" rel="noopener noreferrer">
+        <div className="wePair_description">WePair <br /> <span className="comingSoon">Coming soon</span></div>
+      </a></div>
+
+      <div className="box t">
+        <div className="hobbies">My Hobbies</div>
+      </div>
+      <div className="box q">
+        <div className="sailing_image"></div>
+      </div>
+      <div className="box s">
+        <div className="sailing_image"></div>
+      </div>
+      <div className="box r">
+        <div className="sailing_image"></div>
+      </div>
+      <div className="box u">
+        <div className="sailing_image"></div>
+      </div>
+
+      <div className="box xx"></div>
+      <div className="box yy"></div>
+      <div className="box zz"></div>
+      <div className="box ww"></div>
+      <div className="box q"></div>
+      <div className="box r"></div>
+      <div className="box s"></div>
+      <div className="box u"></div>
       <div className="box w">10</div>
       <div className="box y">10</div>
     </div>
