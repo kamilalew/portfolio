@@ -13,8 +13,10 @@ function App() {
   return (
     <div className="container">
       <div className="box a">
-        <h3 className="initials typewriter">K<span>amila</span> L<span>ewicka</span>
-        </h3>
+        <div>
+          <h3 className="initials typewriter">K<span>amila</span> L<span>ewicka</span>
+          </h3>
+        </div>
       </div>
       <div className="box z">
         <div className="aboutMe">Full-Stack Web Developer <br /><br /> London based</div>
