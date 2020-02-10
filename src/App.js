@@ -26,7 +26,7 @@ function App() {
           <a href='https://github.com/kamilalew' target='_blank' rel="noopener noreferrer"><img className="myLinks myLinks1" src={github} alt="github" /></a>
           <a href='https://www.linkedin.com/in/kamila-m-lewicka/' target='_blank' rel="noopener noreferrer"><img className="myLinks" src={linkedIn} alt="LinkedIn" /></a>
         </div>
-        <p className="email">kamila.m.lewicka@gmail.com</p>
+        <a className="email" href="mailto:kamila.m.lewicka@gmail.com" rel="noopener noreferrer"><p>kamila.m.lewicka@gmail.com</p></a>
       </div>
       <div className="box j">About Me</div>
       <div className="box b">
