@@ -1,32 +1,52 @@
+body {
+  background-color: #1a1a1a;
+}
+
 .container {
   width: 100vw;
   text-align: center;
+  color: white;
   font-family: "Bubbler One", sans-serif;
-  background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "a a a a a"
+    "z z z z z"
+    "x x x x x"
+    "j j j j j"
+    "i i i i i"
+    "b b b b b"
+    "o o o o o"
+    "o o o o o"
+    "c c c c c"
+    "d e f g p"
+    "h h h h h"
+    "k k k k k"
+    "l l l l l"
+    "m m m m m"
+    "n n n n n"
+    "t t t t t"
+    "q q q q q";
 
-  .box {
-    color: white;
-    height: 150px;
-    width: 100%;
-  }
   @media (min-width: 600px) {
     display: grid;
     grid-template-columns: repeat(6, 2fr);
     grid-template-rows: auto;
     grid-template-areas:
       "a a z z z x"
-      "zz zz zz zz zz zz"
-      "j i i i i i"
-      ". b b o o o"
-      "yy yy yy yy yy yy"
+      // "zz zz zz zz zz zz"
+      "j . b b b ."
+      ". . o o o ."
+      // "yy yy yy yy yy yy"
       "c . . . . ."
       ". d e f g p"
-      "xx xx xx xx xx xx"
+      // "xx xx xx xx xx xx"
       "h . . . . ."
       ". k l m n ."
-      "ww ww ww ww ww ww"
+      // "ww ww ww ww ww ww"
       "t . . . . ."
       ". q . s . ."
       ". . r . u .";
@@ -92,19 +112,21 @@
 
 .j {
   grid-area: j;
-  color: orange !important;
+  height: 150px;
+  color: orange;
   font-weight: bold;
   font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: text-shadow 1s;
-  border: 1px solid #333333;
-  border-radius: 5px;
+
 
   @media (min-width: 600px) {
+    border: 1px solid #333333;
+    border-radius: 5px;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-left: 20px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -124,9 +146,11 @@
   .myPhoto {
     background-image: url(./images/new_image.jpg);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 25% 30%;
     height: 150px;
     border-radius: 5px;
+    margin-top: 40px;
   }
   .myPhoto:hover {
     animation: shake 1s;
@@ -174,10 +198,12 @@
   grid-area: o;
   .aboutMe_description {
     padding: 40px 20px 0 20px;
+    margin-bottom: 40px;
     font-size: 20px;
 
     @media (min-width: 600px) {
-      padding: 0px 20px;
+      padding-top: 20px;
+      margin: 0px;
     }
   }
 }
@@ -187,6 +213,7 @@
 }
 
 .x {
+  grid-area: x;
   background-color: #e8e8e8;
   height: 150px;
   border-radius: 5px;
@@ -228,7 +255,8 @@
 
 .c {
   grid-area: c;
-  color: orange !important;
+  height: 150px;
+  color: orange;
   font-weight: bold;
   font-size: 40px;
   display: flex;
@@ -240,7 +268,7 @@
 
   @media (min-width: 600px) {
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-left: 20px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -270,6 +298,9 @@
     background-color: #e8e8e8;
     border-radius: 5px;
     border: 1px solid black;
+    @media (min-width: 600px) {
+      height: 150px;
+    }
   }
 
 .d {
@@ -295,6 +326,7 @@
 
 .h {
   grid-area: h;
+  height: 150px;
   font-weight: bold;
   font-size: 40px;
   display: flex;
@@ -304,8 +336,6 @@
   justify-content: center;
   align-items: center;
   transition: text-shadow 1s;
-  border: 1px solid #333333;
-  border-radius: 5px;
 
   .projects {
     color: orange;
@@ -313,7 +343,9 @@
 
   @media (min-width: 600px) {
     font-size: 20px;
-    margin-top: 30px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    margin-top: 60px;
     margin-left: 20px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -345,6 +377,7 @@
 .k {
   grid-area: k;
   position: relative;
+  height: 150px;
   border-bottom: 1px solid orange;
   border-radius: 5px;
   @media (min-width: 600px) {
@@ -397,6 +430,7 @@
 .l {
   grid-area: l;
   position: relative;
+  height: 150px;
   border-bottom: 1px solid orange;
   border-radius: 5px;
   @media (min-width: 600px) {
@@ -444,6 +478,7 @@
 .m {
   grid-area: m;
   position: relative;
+  height: 150px;
   border-bottom: 1px solid orange;
   border-radius: 5px;
   @media (min-width: 600px) {
@@ -491,6 +526,7 @@
 .n {
   grid-area: n;
   position: relative;
+  height: 150px;
   border-bottom: 1px solid orange;
   border-radius: 5px;
   @media (min-width: 600px) {

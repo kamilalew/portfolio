@@ -33,9 +33,10 @@ function App() {
         <div className='myPhoto'></div>
       </div>
       <div className="box o">
-        <div className="aboutMe_description">Hello, my name is Kamila and I'm a full-stack developer. <br />
-          I have built a successful career as quantitative researcher but always wanted to create apps. <br />
-          I am passionate about CSS and the wide amount of features it offers. <br />
+        <div className="aboutMe_description"  align="justify">I am an extremely motivated individual, always ready to learn new things. 
+        My passion is coding therefore I've decided to give up my previous career to become a professional web/app developer. 
+        <br></br><br></br>Over the last year I've been broadening my coding skills studying on my own, pairing with others during the coding bootcamp and attending various coding meet ups across London.
+        Looking for a full stack position in a fast developing, future focused company.
         </div>
       </div>
       <div className="box v"></div>
@@ -67,24 +68,6 @@ function App() {
         alt="WePair" target="_blank" rel="noopener noreferrer">
         <div className="wePair_description">WePair <br /> <span className="comingSoon">Coming soon</span></div>
       </a></div>
-
-      <div className="box t">
-        <div className="hobbies">My Hobbies</div>
-      </div>
-      <div className="box q">
-        <div className="sailing_image"></div>
-      </div>
-      <div className="box s">
-        <div className="sailing_image"></div>
-      </div>
-      <div className="box r">
-        <div className="sailing_image"></div>
-      </div>
-      <div className="box u">
-        <div className="sailing_image"></div>
-      </div>
-
-      <div className="box xx"></div>
       <div className="box yy"></div>
       <div className="box zz"></div>
       <div className="box ww"></div>
