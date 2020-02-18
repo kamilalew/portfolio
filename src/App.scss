@@ -40,16 +40,17 @@ body {
       // "zz zz zz zz zz zz"
       "j . b b b ."
       ". . o o o ."
-      // "yy yy yy yy yy yy"
+    //  "xx xx xx xx xx xx"
       "c . . . . ."
       ". d e f g p"
-      // "xx xx xx xx xx xx"
+      "xx xx xx xx xx xx"
       "h . . . . ."
       ". k l m n ."
       // "ww ww ww ww ww ww"
       "t . . . . ."
       ". q . s . ."
-      ". . r . u .";
+      ". . r . u ."
+      "w w w w w w";
   }
 }
 
@@ -662,6 +663,9 @@ body {
 
 .xx {
   grid-area: xx;
+  @media (min-width: 600px) {
+    height: 100px;
+  }
 }
 
 .yy {
@@ -682,6 +686,7 @@ body {
 
 .w {
   grid-area: w;
+  height: 100px;
 }
 
 .y {

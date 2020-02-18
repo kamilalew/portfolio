@@ -71,12 +71,12 @@ function App() {
       <div className="box yy"></div>
       <div className="box zz"></div>
       <div className="box ww"></div>
+      <div className="box w"></div>
       <div className="box q"></div>
       <div className="box r"></div>
       <div className="box s"></div>
       <div className="box u"></div>
-      <div className="box w">10</div>
-      <div className="box y">10</div>
+      <div className="box xx"></div>
     </div>
   );
 }
