@@ -1,0 +1,103 @@
+body {
+    background-color: #1a1a1a;
+  }
+  
+  .a {
+    grid-area: a;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .typewriter {
+      color: #fff;
+      overflow: hidden;
+      border-right: 0.1em solid rgb(36, 33, 29);
+      white-space: nowrap;
+      letter-spacing: 0.15em;
+      animation: typing 4s steps(20, end), blink-caret 1s step-end infinite;
+    }
+  
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      10% {
+        border-color: orange;
+      }
+    }
+  
+    span {
+      font-size: 20px;
+    }
+  }
+  
+  .z {
+    grid-area: z;
+    .aboutMe {
+      padding: 30px;
+      font-size: 30px;
+  
+      @media (min-width: 600px) {
+        padding: 10px;
+        padding-top: 40px;
+      }
+    }
+  }
+  
+  .x {
+    grid-area: x;
+    background-color: #e8e8e8;
+    height: 150px;
+    border-radius: 5px;
+  
+    .myLinks_wrap {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+  
+      .myLinks {
+        height: 50px;
+        width: 50px;
+        transition: transform 2s;
+  
+        @media (min-width: 600px) {
+          justify-content: space-around;
+          transition: transform 1s;
+        }
+      }
+      .myLinks1 {
+        padding-right: 40px;
+      }
+  
+      .myLinks:hover {
+        height: 50px;
+        width: 50px;
+        transform: scale(1.2) rotatex(360deg);
+  
+        @media (min-width: 600px) {
+          transform: scale(1.3);
+        }
+      }
+    }
+  
+    .email {
+      color: black;
+    }
+  }
+
+  

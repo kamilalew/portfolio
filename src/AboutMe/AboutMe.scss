@@ -1,0 +1,102 @@
+
+.j {
+    grid-area: j;
+    height: 150px;
+    color: orange;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: text-shadow 1s;
+  
+  
+    @media (min-width: 600px) {
+      border: 1px solid #333333;
+      border-radius: 5px;
+      font-size: 20px;
+      margin-top: 60px;
+      margin-left: 20px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(-16deg);
+    }
+  }
+  
+  .j:hover {
+    text-shadow: 20px 20px grey;
+  }
+  
+  .b {
+    grid-area: b;
+  
+    .myPhoto {
+      background-image: url(../images/new_image.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 25% 30%;
+      height: 150px;
+      border-radius: 5px;
+      margin-top: 40px;
+    }
+    .myPhoto:hover {
+      animation: shake 1s;
+      animation-iteration-count: infinite;
+    }
+  
+    @keyframes shake {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+      10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+      }
+      20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+      }
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+      40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+      50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+      }
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+      100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
+    }
+  }
+  
+  .o {
+    grid-area: o;
+    .aboutMe_description {
+      padding: 40px 20px 0 20px;
+      margin-bottom: 40px;
+      font-size: 20px;
+  
+      @media (min-width: 600px) {
+        padding-top: 20px;
+        margin: 0px;
+      }
+    }
+  }
+  
+  .v {
+    grid-area: v;
+  }

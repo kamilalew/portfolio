@@ -1,0 +1,100 @@
+.c {
+    grid-area: c;
+    height: 150px;
+    color: orange;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: text-shadow 1s;
+    border: 1px solid #333333;
+    border-radius: 5px;
+  
+    @media (min-width: 600px) {
+      font-size: 20px;
+      margin-top: 60px;
+      margin-left: 20px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(-16deg);
+    }
+  }
+  
+  .c:hover {
+    text-shadow: 20px 20px grey;
+  }
+  
+    .technologies {
+      height: 80px;
+      width: 80px;
+    }
+  
+    .d,
+    .e,
+    .f,
+    .g,
+    .p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #e8e8e8;
+      border-radius: 5px;
+      border: 1px solid black;
+      @media (min-width: 600px) {
+        height: 150px;
+      }
+    }
+  
+  .d {
+    grid-area: d;
+  }
+  
+  .e {
+    grid-area: e;
+    margin-bottom: 0;
+  }
+  
+  .f {
+    grid-area: f;
+  }
+  
+  .g {
+    grid-area: g;
+  }
+  
+  .p {
+    grid-area: p;
+  }
+  
+  .h {
+    grid-area: h;
+    height: 150px;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: text-shadow 1s;
+  
+    @media (min-width: 600px) {
+      font-size: 20px;
+      border: 1px solid #333333;
+      border-radius: 5px;
+      margin-top: 60px;
+      margin-left: 20px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(-16deg);
+    }
+  }
+  .h:hover {
+    text-shadow: 20px 20px grey;
+  }
