@@ -3,12 +3,10 @@ body {
 }
 
 .container {
-  width: 100vw;
   text-align: center;
   color: white;
+  margin: 100px;
   font-family: "Bubbler One", sans-serif;
-  display: flex;
-  flex-direction: column;
   display: grid;
   grid-template-columns: repeat(5, 2fr);
   grid-template-rows: auto;
